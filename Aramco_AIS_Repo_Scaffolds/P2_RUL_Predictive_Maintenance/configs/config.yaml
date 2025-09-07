@@ -1,0 +1,4 @@
+seed: 42
+n_assets: 120
+horizon_days: 90
+output_dir: artifacts

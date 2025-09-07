@@ -1,0 +1,16 @@
+name: P3_RAG_Safety_Copilot
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - numpy
+      - pandas
+      - scikit-learn
+      - matplotlib
+      - mlflow
+      - fastapi
+      - uvicorn
+      - pydantic
+      - pyyaml
