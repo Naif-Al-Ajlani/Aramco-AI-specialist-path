@@ -1,0 +1,17 @@
+{
+  "title": "P3 RAG Safety Copilot",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Queries Processed",
+      "datasource": null,
+      "targets": [
+        {
+          "expr": "queries_total",
+          "legendFormat": "queries"
+        }
+      ]
+    }
+  ],
+  "timezone": "browser"
+}

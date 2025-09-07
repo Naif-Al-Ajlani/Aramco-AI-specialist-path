@@ -1,0 +1,7 @@
+Standard Operating Procedure – Pump Start-Up
+
+1. Before starting the pump, verify that suction and discharge valves are open and the system is depressurised.
+2. Ensure lubrication oil levels are within acceptable range.
+3. Start the motor and monitor vibration and temperature. If any abnormal noise or vibration is detected, shut down immediately and investigate.
+4. Record the start-up parameters in the log book.
+5. For detailed instructions, consult the full SOP document.

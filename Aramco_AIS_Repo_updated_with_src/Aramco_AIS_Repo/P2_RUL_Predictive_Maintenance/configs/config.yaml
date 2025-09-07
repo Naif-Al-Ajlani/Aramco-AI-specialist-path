@@ -1,0 +1,6 @@
+model:
+  type: coxph        # options: coxph, xgboost_aft
+data:
+  window_size: 30
+train:
+  test_split_ratio: 0.25

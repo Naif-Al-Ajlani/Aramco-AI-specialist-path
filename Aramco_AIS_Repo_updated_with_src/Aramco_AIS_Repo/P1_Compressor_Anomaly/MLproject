@@ -1,0 +1,11 @@
+name: P1_Compressor_Anomaly
+
+entry_points:
+  train:
+    parameters:
+      config_path: {type: str, default: configs/config.yaml}
+    command: "python src/train.py --config {config_path}"
+  serve:
+    command: "python src/serve.py"
+  export_metrics:
+    command: "python src/metrics_exporter.py"

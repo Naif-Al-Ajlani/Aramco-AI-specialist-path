@@ -1,0 +1,53 @@
+version: "3.9"
+
+services:
+  service:
+    build: .
+    container_name: compressor_service
+    ports:
+      - "8000:8000"
+    networks:
+      - ais-net
+    depends_on:
+      - exporter
+
+  exporter:
+    image: python:3.10-slim
+    container_name: compressor_exporter
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: ["python", "src/metrics_exporter.py"]
+    ports:
+      - "9108:9108"
+    networks:
+      - ais-net
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+    networks:
+      - ais-net
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    networks:
+      - ais-net
+    depends_on:
+      - prometheus
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - ./dashboards/grafana_dashboard.json:/etc/grafana/provisioning/dashboards/dashboard.json
+
+networks:
+  ais-net:
+    driver: bridge
