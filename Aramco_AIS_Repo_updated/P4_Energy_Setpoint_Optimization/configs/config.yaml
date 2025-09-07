@@ -1,0 +1,7 @@
+optimizer:
+  max_iter: 20
+  safe:
+    enable: true
+    initial_safe_point: [0.5]
+baseline:
+  seasonality: stl

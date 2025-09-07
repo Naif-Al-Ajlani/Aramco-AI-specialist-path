@@ -1,0 +1,17 @@
+{
+  "title": "P5 Emissions & Flaring Reduction",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "False Alarm Reduction (%)",
+      "datasource": null,
+      "targets": [
+        {
+          "expr": "false_alarm_reduction_percent",
+          "legendFormat": "FA Red.%"
+        }
+      ]
+    }
+  ],
+  "timezone": "browser"
+}

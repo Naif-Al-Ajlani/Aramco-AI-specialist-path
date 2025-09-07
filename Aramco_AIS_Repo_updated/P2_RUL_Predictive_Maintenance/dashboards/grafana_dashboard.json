@@ -1,0 +1,17 @@
+{
+  "title": "P2 RUL Predictive Maintenance",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Concordance Index",
+      "datasource": null,
+      "targets": [
+        {
+          "expr": "concordance_index",
+          "legendFormat": "C-index"
+        }
+      ]
+    }
+  ],
+  "timezone": "browser"
+}

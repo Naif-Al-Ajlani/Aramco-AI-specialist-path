@@ -1,0 +1,5 @@
+changepoint:
+  method: pelt
+  penalty: 3.0
+data:
+  seasonal_window: 1440    # number of samples per seasonal cycle (e.g. minutes per day)

@@ -1,0 +1,17 @@
+{
+  "title": "P4 Energy & Setpoint Optimization",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "Energy Reduction (%)",
+      "datasource": null,
+      "targets": [
+        {
+          "expr": "energy_reduction_percent",
+          "legendFormat": "ΔEnergy%"
+        }
+      ]
+    }
+  ],
+  "timezone": "browser"
+}

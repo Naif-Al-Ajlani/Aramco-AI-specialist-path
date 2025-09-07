@@ -1,0 +1,28 @@
+{
+  "title": "P1 Compressor Anomaly",
+  "panels": [
+    {
+      "type": "stat",
+      "title": "False Alarms per Hour",
+      "datasource": null,
+      "targets": [
+        {
+          "expr": "false_alarms_per_hour",
+          "legendFormat": "FA/h"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Anomaly Detector AUROC",
+      "datasource": null,
+      "targets": [
+        {
+          "expr": "anomaly_auroc",
+          "legendFormat": "AUROC"
+        }
+      ]
+    }
+  ],
+  "timezone": "browser"
+}

@@ -1,0 +1,5 @@
+name: P3_RAG_Safety_Copilot
+
+entry_points:
+  serve:
+    command: "python src/app.py"
